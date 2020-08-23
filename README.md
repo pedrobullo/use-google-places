@@ -2,6 +2,12 @@
 
 Hook to consume Google Places API returning both autocomplete with debounce and geocoding callback method
 
+### Flow
+
+```js
+onChange<keyword> -> Fetch autocomplete -> results -> onSelect -> Fetch geocoding -> onSelect.callback<result>
+```
+
 ### Installation
 
 - TODO
