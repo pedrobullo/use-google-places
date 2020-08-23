@@ -1,7 +1,7 @@
 {
-  "name": "react-use-google-places",
-  "version": "1.0.0",
-  "description": "Hook to consume Google Places API returning both autocomplete and geocoding callback method",
+  "name": "use-google-places",
+  "version": "1.0.1",
+  "description": "React hook that consumes Google Places API returning both autocomplete and geocoding callback method",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
@@ -10,14 +10,13 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "eslint src",
     "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/schardtbc/ts-package-template.git"
+    "url": "git+https://github.com/pedrobullo/use-google-places"
   },
   "keywords": [
     "react",
