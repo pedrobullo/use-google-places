@@ -5,7 +5,7 @@ on:
       - master
 
 jobs:
-  lint:
+  build-publish:
     name: "Publish New version"
     runs-on: ubuntu-latest
     steps:
