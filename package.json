@@ -49,7 +49,7 @@
     "lib/**/*"
   ],
   "lint-staged": {
-    "*.ts": "yarn lint"
+    "*.{js,jsx,ts,tsx}": "eslint"
   },
   "husky": {
     "hooks": {
