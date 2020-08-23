@@ -56,17 +56,3 @@ Hook to consume Google Places API returning both autocomplete with debounce and 
     )}
   />
 ```
-
-#### HOC
-
-```js
-import { withKeyboardAvoidingView } from "...";
-
-const MyScreen = () => {
-  return <View />;
-};
-
-export default withKeyboardAvoidingView(MyScreen, {
-  keyboardVerticalOffset: 10,
-});
-```
