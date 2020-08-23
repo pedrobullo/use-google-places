@@ -2,7 +2,7 @@
 
 Hook to consume Google Places API returning both autocomplete with debounce and geocoding callback method
 
-### Installaition
+### Installation
 
 - TODO
 
