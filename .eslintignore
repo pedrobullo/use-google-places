@@ -4,3 +4,4 @@ jestconfig.json
 .prettierrc
 coverage
 .eslintrc.js
+lib
