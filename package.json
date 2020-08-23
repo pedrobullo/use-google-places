@@ -1,0 +1,46 @@
+{
+  "name": "react-use-google-places",
+  "version": "1.0.0",
+  "description": "Hook to consume Google Places API returning both autocomplete and geocoding callback method",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schardtbc/ts-package-template.git"
+  },
+  "keywords": [
+    "react",
+    "react native",
+    "autocomplete",
+    "google api",
+    "google places",
+    "geocoding"
+  ],
+  "author": "Pedro Bullo <pedro.bj@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "26.0.9",
+    "@types/react": "^16.9.46",
+    "jest": "26.3.0",
+    "prettier": "2.0.5",
+    "tslint-config-prettier": "1.18.0",
+    "typescript": "3.9.7"
+  },
+  "dependencies": {
+    "react": "16.13.1"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
