@@ -29,6 +29,8 @@
   "author": "Pedro Bullo <pedro.bj@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
     "@types/jest": "26.0.9",
     "@types/react": "^16.9.46",
     "@typescript-eslint/eslint-plugin": "^3.9.1",
@@ -52,6 +54,7 @@
   },
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "yarn lint"
     }
   }
