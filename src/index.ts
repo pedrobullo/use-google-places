@@ -10,6 +10,7 @@ type TProps = {
 
 type TResult = {
   title: string;
+  subtitle: string;
   description: string;
   placeId: string;
 };
@@ -26,9 +27,9 @@ export default ({ apiKey, delay = 0, output = "json" }: TProps) => {
       return predictions.map(
         ({ place_id, structured_formatting, description }) => ({
           title: structured_formatting.main_text,
-          description: structured_formatting.secondary_text,
+          subtitle: structured_formatting.secondary_text,
           placeId: place_id,
-          address: description,
+          description,
         })
       );
     }
