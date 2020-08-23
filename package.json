@@ -1,7 +1,7 @@
 {
-  "name": "react-use-google-places",
+  "name": "use-google-places",
   "version": "1.0.0",
-  "description": "Hook to consume Google Places API returning both autocomplete and geocoding callback method",
+  "description": "React hook that consumes Google Places API returning both autocomplete and geocoding callback method",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
