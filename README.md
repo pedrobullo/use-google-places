@@ -10,7 +10,11 @@ onChange<keyword> -> Fetch autocomplete -> results -> onSelect -> Fetch geocodin
 
 ### Installation
 
-- TODO
+```bash
+yarn add use-google-places
+# or
+npm i use-google-places
+```
 
 ### Options
 
