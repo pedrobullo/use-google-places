@@ -27,9 +27,5 @@ jobs:
       - run: yarn build
       - run: npx semantic-release
         env:
-<<<<<<< HEAD
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-=======
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
->>>>>>> a397971ce03bb9ed39d52640c34a6c3da671fb19
