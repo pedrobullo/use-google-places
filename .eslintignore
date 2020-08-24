@@ -5,3 +5,4 @@ jestconfig.json
 coverage
 .eslintrc.js
 lib
+commitlint.config.js
